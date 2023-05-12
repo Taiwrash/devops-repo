@@ -1,4 +1,4 @@
-## DevOps-Spot
+## Welcome to DevOps-Spot
 ## Getting Started
 
 First, run the development server:
