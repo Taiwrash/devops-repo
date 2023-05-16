@@ -2,6 +2,7 @@
 ## Getting Started
 
 ## Do this after cloning!
+
 First, run the development server:
 
 ```bash
