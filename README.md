@@ -1,6 +1,7 @@
 ## Welcome to DevOps-Spot
 ## Getting Started
 
+## Do this after cloning!
 First, run the development server:
 
 ```bash
