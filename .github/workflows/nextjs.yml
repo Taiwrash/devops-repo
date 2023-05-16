@@ -83,12 +83,23 @@ jobs:
           path: ./out
 
   # Deployment job
-  deploy:
+  deploy-staging:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
+        
+  deploy-prod:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: [build, deploy-staging]
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
