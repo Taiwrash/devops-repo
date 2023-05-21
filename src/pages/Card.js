@@ -9,7 +9,7 @@ export default function Card() {
   };
 
   return (
-    <div className="bg-white-300">
+    <div className="bg-white">
       {/* Your other page content */}
       <ExamplePage repository={repository} />
     </div>
